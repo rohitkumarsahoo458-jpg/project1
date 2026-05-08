@@ -4,7 +4,7 @@ import axios from 'axios';
 function App() {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:5000/projects').then(res => setProjects(res.data));
+    axios.get('https://portfolio-backend-jmaa.onrender.com/projects').then(res => setProjects(res.data));
   }, []);
 
   return (
